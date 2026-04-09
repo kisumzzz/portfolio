@@ -1,0 +1,638 @@
+@font-face {
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/cerebri-sans-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Cerebri Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/cerebri-sans-bold.woff2") format("woff2");
+}
+
+:root {
+  --spring-base: #aace69;
+  --spring-primary: #f7f2dc;
+  --spring-secondary: #51673b;
+  --summer-base: #52afc9;
+  --summer-primary: #ffd770;
+  --summer-secondary: #ffffff;
+  --autumn-base: #fcfaee;
+  --autumn-primary: #ec8132;
+  --autumn-secondary: #993f17;
+  --autumn-fade: rgba(236, 129, 50, 0.1);
+  --winter-base: #f8feff;
+  --winter-primary: #2f70a9;
+  --winter-secondary: #91d1f2;
+  --footer-line: rgba(47, 112, 169, 0.1);
+  --footer-text: rgba(47, 112, 169, 0.7);
+  --break-medium: 768px;
+  --break-large: 1024px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Cerebri Sans", sans-serif;
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--spring-secondary);
+}
+
+h1 {
+  font-size: 4.236em;
+}
+
+h2 {
+  font-size: 2.618em;
+}
+
+h3 {
+  font-size: 1.618em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(247, 242, 220, 0.86);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(81, 103, 59, 0.08);
+}
+
+.site-nav__inner {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 14px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.site-nav__brand {
+  font-weight: 700;
+}
+
+.site-nav__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.site-nav__links a {
+  color: var(--spring-secondary);
+}
+
+.intro {
+  display: grid;
+  grid-template-rows: minmax(2rem, 1fr) auto minmax(2rem, 1fr);
+  min-height: calc(100vh - 58px);
+  background: var(--spring-base);
+  color: var(--spring-secondary);
+}
+
+.intro--content,
+.projects--project,
+.experiences--experience,
+.contact--content {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.intro--content {
+  grid-row: 2 / 3;
+}
+
+.intro--heading {
+  margin: 0 0 0.7em;
+  color: var(--spring-primary);
+  letter-spacing: -0.1rem;
+}
+
+.intro--dash {
+  width: 10%;
+  min-width: 50px;
+  margin: 0;
+  border-width: 5px;
+  border-style: solid;
+  color: var(--spring-primary);
+}
+
+.intro--subheading {
+  margin: 1em 0 0;
+  letter-spacing: -0.1rem;
+  max-width: 16ch;
+}
+
+.intro--keywords {
+  display: block;
+  margin: 0.5rem 0 0.35rem;
+}
+
+.intro--keyword {
+  display: inline-block;
+  margin: 0 0.35rem 0.45rem 0;
+  padding: 0.18rem 0.5rem;
+  background: rgba(247, 242, 220, 0.22);
+  border: 2px solid rgba(247, 242, 220, 0.7);
+  color: var(--spring-primary);
+  line-height: 1;
+}
+
+.projects {
+  background: var(--summer-base);
+  color: var(--summer-secondary);
+}
+
+.projects--heading,
+.experiences--heading,
+.contact--heading {
+  margin-bottom: 5rem;
+  padding-top: 2.5rem;
+}
+
+.projects--heading {
+  padding-right: 2.5rem;
+  text-align: right;
+}
+
+.experiences--heading {
+  padding-left: 2.5rem;
+}
+
+.contact--heading {
+  text-align: center;
+}
+
+.projects--heading h2,
+.experiences--heading h2,
+.contact--heading h2 {
+  display: inline-block;
+  margin: 0;
+  border-top: solid 1rem;
+}
+
+.projects--project {
+  display: grid;
+  align-items: center;
+  grid-column-gap: 2rem;
+  padding-bottom: 5rem;
+}
+
+.projects--project:nth-of-type(odd) {
+  grid-template:
+    "image details" auto
+    / 40% auto;
+  text-align: right;
+}
+
+.projects--project:nth-of-type(even) {
+  grid-template:
+    "details image" auto
+    / auto 40%;
+  justify-items: right;
+}
+
+.projects--image {
+  grid-area: image;
+}
+
+.projects--image-card {
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 4 / 3;
+  border: 7px solid var(--summer-secondary);
+  box-shadow: rgba(76, 164, 188, 0.18) 0 6px 24px;
+  background:
+    linear-gradient(135deg, rgba(255, 215, 112, 0.4), rgba(255, 255, 255, 0.14)),
+    #74bfd3;
+  display: grid;
+  place-items: center;
+}
+
+.projects--image-card span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.projects--image-card-alt {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.28), rgba(47, 112, 169, 0.18)),
+    #5eb5cb;
+}
+
+.projects--image-card-soft {
+  background:
+    linear-gradient(135deg, rgba(255, 215, 112, 0.28), rgba(255, 255, 255, 0.08)),
+    #4ca7c3;
+}
+
+.projects--details {
+  grid-area: details;
+}
+
+.projects--title {
+  margin: 0 0 1rem;
+  color: var(--summer-primary);
+  letter-spacing: -0.12rem;
+  line-height: 0.9;
+}
+
+.projects--category {
+  margin: 0 0 1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+}
+
+.projects--description {
+  margin: 0;
+}
+
+.projects--link {
+  display: inline-block;
+  margin-top: 1rem;
+  border-bottom: 1.5px solid var(--summer-primary);
+  color: var(--summer-secondary);
+}
+
+.projects--link:hover {
+  color: var(--summer-primary);
+}
+
+.experiences {
+  background: var(--autumn-base);
+  color: var(--autumn-secondary);
+}
+
+.experiences--experience {
+  display: grid;
+  grid-column-gap: 4rem;
+  grid-template-columns: auto 1fr;
+  max-width: 830px;
+  padding-bottom: 5rem;
+}
+
+.experiences--logo {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: var(--autumn-fade);
+  display: grid;
+  place-items: center;
+  color: var(--autumn-primary);
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.experiences--name {
+  margin: 0;
+  color: var(--autumn-primary);
+  letter-spacing: -0.1rem;
+}
+
+.experiences--dash {
+  width: 10%;
+  margin: 0.5rem 0 1.5rem;
+  border: 0;
+  border-top: 0.25rem solid var(--autumn-primary);
+}
+
+.experiences--scope {
+  padding: 1rem;
+  background: var(--autumn-fade);
+}
+
+.experiences--scope h3 {
+  margin: 0 0 0.5rem;
+}
+
+.experiences--scope ul {
+  margin: 0;
+  line-height: 1.3;
+}
+
+.hobbies {
+  background: #f2f8ee;
+  color: #55704a;
+}
+
+.hobbies--heading {
+  margin-bottom: 3rem;
+  padding: 2.5rem 2.5rem 0;
+  text-align: right;
+}
+
+.hobbies--heading h2 {
+  display: inline-block;
+  margin: 0;
+  border-top: solid 1rem;
+}
+
+.hobbies--grid {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.hobbies--item {
+  padding: 1.25rem;
+  background: rgba(86, 112, 74, 0.08);
+}
+
+.hobbies--label {
+  margin: 0 0 0.75rem;
+  color: #6f8f61;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06rem;
+}
+
+.hobbies--item h3 {
+  margin: 0 0 0.75rem;
+  color: #55704a;
+}
+
+.hobbies--item p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.contact {
+  background: var(--winter-base);
+  color: var(--winter-secondary);
+  text-align: center;
+}
+
+.contact--content {
+  padding-bottom: 3rem;
+}
+
+.contact--list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact--list li {
+  margin-bottom: 1.5rem;
+}
+
+.contact--list a {
+  border-bottom: 1.5px solid var(--winter-secondary);
+  color: var(--winter-primary);
+}
+
+.contact--list a:hover {
+  color: var(--winter-secondary);
+}
+
+.footer-note {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 1rem 1rem 2rem;
+  border-top: 1px solid var(--footer-line);
+  color: var(--footer-text);
+  font-size: 0.7em;
+}
+
+.page-shell {
+  background: var(--autumn-base);
+  min-height: 100vh;
+}
+
+.page-intro,
+.section {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.page-intro {
+  padding: 4rem 0 2rem;
+}
+
+.section-tight {
+  padding-bottom: 3rem;
+}
+
+.section-kicker,
+.project-type {
+  margin: 0 0 0.75rem;
+  color: var(--autumn-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+}
+
+.page-title {
+  margin: 0 0 1rem;
+  color: var(--autumn-primary);
+  letter-spacing: -0.1rem;
+  line-height: 0.95;
+}
+
+.page-title span {
+  display: block;
+}
+
+.intro,
+.page-intro p,
+.timeline-content p,
+.project-card p {
+  line-height: 1.5;
+}
+
+.timeline {
+  display: grid;
+  gap: 1.75rem;
+}
+
+.timeline-item,
+.project-card {
+  border: 0;
+  background: var(--autumn-fade);
+  padding: 1.25rem;
+}
+
+.timeline-company {
+  margin: 0.5rem 0 0.75rem;
+  color: var(--autumn-primary);
+  font-weight: 700;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.project-tags span {
+  padding: 0.35rem 0.6rem;
+  background: rgba(236, 129, 50, 0.12);
+  color: var(--autumn-secondary);
+  font-size: 0.8rem;
+}
+
+.garden-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.text-link {
+  border-bottom: 1.5px solid currentColor;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 3.375em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.369em;
+  }
+
+  h2 {
+    font-size: 1.777em;
+  }
+
+  h3 {
+    font-size: 1.333em;
+  }
+
+  .site-nav__inner,
+  .projects--project,
+  .experiences--experience {
+    width: calc(100% - 2rem);
+  }
+
+  .site-nav__inner,
+  .experiences--experience {
+    grid-template-columns: 1fr;
+  }
+
+  .site-nav__inner {
+    display: grid;
+  }
+
+  .projects--heading,
+  .experiences--heading,
+  .hobbies--heading,
+  .contact--heading {
+    margin-bottom: 2rem;
+  }
+
+  .projects--heading {
+    padding: 1rem 1rem 0;
+  }
+
+  .experiences--heading {
+    padding: 1rem 0 0 1rem;
+  }
+
+  .contact--heading {
+    padding-top: 20px;
+  }
+
+  .hobbies--heading {
+    padding: 1rem 1rem 0;
+  }
+
+  .projects--heading h2,
+  .experiences--heading h2,
+  .hobbies--heading h2,
+  .contact--heading h2 {
+    border-top-width: 0.75rem;
+  }
+
+  .hobbies--grid {
+    width: calc(100% - 2rem);
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .projects--project {
+    display: block;
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+
+  .projects--title {
+    margin: 1rem 0 0.5rem;
+  }
+
+  .experiences--experience {
+    display: block;
+    max-width: 450px;
+    padding-bottom: 3rem;
+  }
+
+  .experiences--logo {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 0.25rem;
+  }
+
+  .experiences--name {
+    text-align: center;
+  }
+
+  .experiences--dash {
+    margin: 0.5rem auto 1rem;
+  }
+
+  .intro--subheading {
+    max-width: none;
+  }
+}
