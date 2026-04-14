@@ -8,6 +8,7 @@ The chatbot now uses:
 
 - front-end static retrieval from `src/data/resumeKnowledge.json`
 - a local proxy server in `server/index.mjs`
+- a Vercel serverless route in `api/chat.mjs`
 - OpenAI Responses API with a reasoning model
 
 ## Local setup
@@ -25,6 +26,8 @@ This starts:
 
 ```text
 new_website/
+├── api/
+│   └── chat.mjs                # Vercel serverless API route
 ├── assets/
 │   └── fonts/                  # Local font assets
 ├── server/
@@ -56,6 +59,7 @@ new_website/
 - `src/data/resumeKnowledge.json` stores professional RAG knowledge.
 - `src/data/personalKnowledge.json` stores life and personal-context knowledge.
 - `src/components/ResumeChatbot.jsx` is the floating chatbot UI used across the site.
+- `api/chat.mjs` is the Vercel-compatible serverless API entrypoint.
 - `server/services/chatService.mjs` is the main agent-like orchestration layer.
 - `server/services/intentClassifier.mjs` uses the model to classify whether a question is `resume`, `personal`, or `general`.
 - `server/knowledge/retrieval.mjs` selects the most relevant knowledge chunks before response generation.
@@ -70,3 +74,22 @@ new_website/
 6. `server/prompts/chatPrompt.mjs` builds the grounded prompt using the selected context.
 7. `server/services/chatService.mjs` sends the final request to the OpenAI Responses API.
 8. The response is returned to the frontend and rendered in the floating chatbot UI.
+
+## Vercel deployment
+
+For Vercel, the chatbot API is served from:
+
+- `api/chat.mjs`
+
+Set these environment variables in your Vercel project settings:
+
+- `OPENAI_API_KEY`
+- `OPENAI_MODEL`
+- `OPENAI_REASONING_EFFORT`
+- `OPENAI_INTENT_MODEL`
+
+Notes:
+
+- Do not commit your real `.env` file.
+- Vercel reads environment variables from its dashboard, not from your local `.env`.
+- Local development still uses `server/index.mjs` plus the Vite proxy.
