@@ -1,0 +1,65 @@
+[
+  {
+    "id": "aws-sde-role",
+    "title": "Current role at AWS Connect",
+    "section": "Experience",
+    "keywords": ["amazon", "aws", "connect", "current", "engineer", "role", "seattle"],
+    "content": "Anqi is currently a Software Development Engineer at Amazon Web Services on the AWS Connect team in Seattle, Washington. She has been in this role since September 2022."
+  },
+  {
+    "id": "aws-distributed-systems",
+    "title": "Distributed systems scope",
+    "section": "Experience",
+    "keywords": ["distributed", "systems", "backend", "event-driven", "chat", "scale", "architecture"],
+    "content": "Her engineering work includes building large-scale event-driven distributed systems that support more than 500 million daily chat interactions."
+  },
+  {
+    "id": "aws-ai-automation",
+    "title": "LLM and incident automation",
+    "section": "Experience",
+    "keywords": ["ai", "llm", "automation", "incident", "triage", "microservices"],
+    "content": "She designed LLM-powered automation for incident response and reduced triage time by 80 percent across production microservices."
+  },
+  {
+    "id": "aws-reliability",
+    "title": "Reliability and infrastructure",
+    "section": "Experience",
+    "keywords": ["reliability", "scalability", "aws", "kubernetes", "cloud", "observability", "infrastructure"],
+    "content": "She improved reliability and scalability through asynchronous architectures, observability, and cloud-native infrastructure on AWS and Kubernetes."
+  },
+  {
+    "id": "amifor-product",
+    "title": "Technical product management",
+    "section": "Experience",
+    "keywords": ["product", "manager", "amifor", "cross-functional", "user", "execution"],
+    "content": "Before AWS, Anqi worked as a Technical Product Manager at Amifor Management in Atlanta from May 2021 to August 2022, leading cross-functional product and engineering work."
+  },
+  {
+    "id": "amifor-lock-app",
+    "title": "Smart lock application",
+    "section": "Experience",
+    "keywords": ["smart lock", "mobile", "app", "users", "workflow", "dashboard", "automation"],
+    "content": "At Amifor Management, she worked on a smart lock app with more than 1,000 daily active users and improved workflow efficiency by 60 percent through automation and KPI dashboards."
+  },
+  {
+    "id": "education-trine",
+    "title": "Information Systems degree",
+    "section": "Education",
+    "keywords": ["education", "degree", "masters", "information systems", "trine"],
+    "content": "Anqi is completing a Master of Science in Information Systems at Trine University, with dates listed as January 2023 through December 2025."
+  },
+  {
+    "id": "education-rpi",
+    "title": "Business Analytics degree",
+    "section": "Education",
+    "keywords": ["education", "degree", "masters", "business analytics", "rpi", "rensselaer"],
+    "content": "She also earned a Master of Science in Business Analytics from Rensselaer Polytechnic Institute, with dates listed as August 2019 through December 2020."
+  },
+  {
+    "id": "profile-summary",
+    "title": "Overall profile",
+    "section": "Summary",
+    "keywords": ["summary", "background", "fit", "strengths", "roles", "backend", "platform", "ai"],
+    "content": "Her overall profile combines backend engineering, distributed systems, AI automation, and product-minded execution. She is a strong fit for backend, platform, infrastructure, and applied AI engineering roles."
+  }
+]

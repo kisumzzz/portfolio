@@ -33,7 +33,7 @@ export const projects = [
 
 export const experiences = [
   {
-    initials: "AM",
+    initials: "AMZ",
     company: "Amazon Web Services, AWS Connect",
     role: "Software Development Engineer | Seattle, WA | 09/2022 - Present",
     bullets: [
@@ -86,9 +86,9 @@ export const hobbies = [
 ];
 
 export const contactLinks = [
-  { label: "Email", href: "mailto:hello@example.com" },
+  { label: "Email", href: "zuoanqiwk@gmail.com" },
   { label: "Projects", href: "/projects" },
   { label: "Experience", href: "/experience" },
-  { label: "GitHub", href: "https://github.com", external: true },
-  { label: "LinkedIn", href: "https://www.linkedin.com", external: true },
+  { label: "GitHub", href: "https://github.com/kisumzzz", external: true },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/anqizuo/", external: true },
 ];

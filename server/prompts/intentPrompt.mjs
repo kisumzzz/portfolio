@@ -1,0 +1,2 @@
+export const intentPrompt =
+  "Classify the user's question by semantic intent. Return exactly one lowercase word and nothing else: resume, personal, or general. Use resume for professional background, work history, education, skills, or projects. Use personal for hobbies, lifestyle, preferences, pets, personality, or life outside work. Use general for ordinary conversation, broad advice, or topics not specifically about Anqi's background or life details.";

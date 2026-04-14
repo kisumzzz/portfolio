@@ -8,14 +8,10 @@ export default function ProjectsPage() {
       <section className="page-intro">
         <p className="section-kicker">Projects</p>
         <h1 className="page-title">
-          Small projects,
-          <span>experiments, and ideas that became something real.</span>
-        </h1>
-        <p className="page-copy">
           These highlights focus on the kinds of systems I have built in
           practice: LLM-powered automation, event-driven messaging platforms,
           and cloud infrastructure that improves reliability and delivery speed.
-        </p>
+        </h1>
       </section>
 
       <ProjectsSection projects={projects} />

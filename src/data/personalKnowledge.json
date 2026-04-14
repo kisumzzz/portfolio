@@ -1,0 +1,23 @@
+[
+  {
+    "id": "personal-knitting",
+    "title": "Knitting",
+    "section": "Personal",
+    "keywords": ["knitting", "creative", "hobby", "craft", "handmade", "relax"],
+    "content": "Anqi enjoys knitting and sees it as a slow, hands-on creative practice that helps her unwind through texture, color, and patience."
+  },
+  {
+    "id": "personal-tennis",
+    "title": "Tennis",
+    "section": "Personal",
+    "keywords": ["tennis", "sport", "active", "exercise", "match", "movement"],
+    "content": "She likes tennis for its rhythm and the balance between focus, movement, and repetition that makes every match feel a little different."
+  },
+  {
+    "id": "personal-guinea-pigs",
+    "title": "Guinea pigs",
+    "section": "Personal",
+    "keywords": ["guinea pig", "guinea pigs", "pet", "pets", "animal", "home", "cute"],
+    "content": "Anqi has a soft spot for guinea pigs and sees them as a source of personality, chaos, and joy in everyday life. Anqi has 4 guinea pigs. They're Yoyo, Dabao, Xiaohei, and Tutu. "
+  }
+]
