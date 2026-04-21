@@ -1,15 +1,5 @@
 export const projects = [
   {
-    title: "LLM Incident Investigation System",
-    category: "AI SYSTEMS / INCIDENT RESPONSE / BACKEND ENGINEERING",
-    description:
-      "Built an LLM-powered incident investigation system at Amazon that reduced incident triage time by 80% across 5+ production microservices through structured execution, scoped agents, and multi-stage fallbacks.",
-    link: "/projects",
-    linkLabel: "View project highlights",
-    imageLabel: "LLM Ops",
-    imageClassName: "",
-  },
-  {
     title: "Chatbot Initialization Platform",
     category: "DISTRIBUTED SYSTEMS / EVENT-DRIVEN ARCHITECTURE",
     description:

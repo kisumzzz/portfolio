@@ -28,3 +28,25 @@ export async function createOpenAIResponse(body) {
 
   return responseBody;
 }
+
+export async function createEmbedding(body) {
+  const response = await fetch("https://api.openai.com/v1/embeddings", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${env.apiKey}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      ...body,
+      encoding_format: "float",
+    }),
+  });
+
+  const responseBody = await response.json();
+
+  if (!response.ok) {
+    throw new Error(responseBody.error?.message || "Embedding request failed.");
+  }
+
+  return responseBody;
+}

@@ -38,4 +38,5 @@ export const env = {
   model: process.env.OPENAI_MODEL || "gpt-5",
   reasoningEffort: process.env.OPENAI_REASONING_EFFORT || "medium",
   intentModel: process.env.OPENAI_INTENT_MODEL || process.env.OPENAI_MODEL || "gpt-5",
+  embeddingModel: process.env.OPENAI_EMBEDDING_MODEL || "text-embedding-3-small",
 };

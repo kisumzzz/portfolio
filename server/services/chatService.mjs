@@ -6,7 +6,7 @@ import { classifyQuestionIntent } from "./intentClassifier.mjs";
 
 export async function createChatReply({ previousResponseId, question }) {
   const intent = await classifyQuestionIntent(question);
-  const retrievalResult = retrieveRelevantChunks(question, intent);
+  const retrievalResult = await retrieveRelevantChunks(question, intent);
   const retrievedChunks = retrievalResult.chunks;
   const isGroundedKnowledgeQuestion =
     intent !== "general" && retrievalResult.hasDirectMatch;
@@ -17,7 +17,7 @@ export async function createChatReply({ previousResponseId, question }) {
         ? "personalKnowledge"
         : "generalConversation";
   const answerStrategy = isGroundedKnowledgeQuestion
-    ? "Ground the answer in saved profile context and speak in first person."
+    ? "Ground the answer in semantically retrieved profile context and speak in first person."
     : intent === "general"
       ? "Answer naturally in first person without pretending my saved knowledge contains the answer."
       : "Use the closest saved context carefully and be explicit when details are not specified.";
