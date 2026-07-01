@@ -1,9 +1,19 @@
 export const projects = [
   {
+    title: "Agentic AI Incident Diagnosis System",
+    category: "AI AGENTS / LLM ENGINEERING / INCIDENT RESPONSE",
+    description:
+      "Built a ReAct-based agentic system on AWS Bedrock that orchestrates MCP-enabled tools across ticketing, logging, and codebase systems with hybrid RAG for enterprise knowledge retrieval, cutting root cause analysis time by 90% with evidence-backed citations and human-in-the-loop verification.",
+    link: "/projects",
+    linkLabel: "View project highlights",
+    imageLabel: "Agentic AI",
+    imageClassName: "",
+  },
+  {
     title: "Chatbot Initialization Platform",
     category: "DISTRIBUTED SYSTEMS / EVENT-DRIVEN ARCHITECTURE",
     description:
-      "Launched an event-driven chatbot initialization feature for AWS Connect supporting 800K+ daily conversations, with SQS-based routing, session caching, and 99.99% availability across global regions.",
+      "Led an event-driven chatbot initialization feature for AWS Connect supporting 800K+ daily chats, delivering $1M+ ARR through personalized first-interaction routing, SQS-based async routing, session caching, and 99.99% availability across global regions.",
     link: "/projects",
     linkLabel: "See more details",
     imageLabel: "Chat Flow",
@@ -25,11 +35,13 @@ export const experiences = [
   {
     initials: "AMZ",
     company: "Amazon Web Services, AWS Connect",
-    role: "Software Development Engineer | Seattle, WA | 09/2022 - Present",
+    role: "Software Development Engineer | Seattle, WA | 09/2022 - 06/2026",
     bullets: [
-      "Built large-scale, event-driven distributed systems supporting 500M+ daily chat interactions.",
-      "Designed LLM-powered automation for incident response, cutting triage time by 80% across production microservices.",
-      "Improved reliability and scalability with asynchronous architectures, observability, and cloud-native infrastructure on AWS and Kubernetes.",
+      "Built a ReAct-based agentic AI system on AWS Bedrock for automated incident diagnosis, orchestrating MCP-enabled tools and hybrid RAG to cut root cause analysis time by 90%.",
+      "Designed a self-correction loop with LLM-as-judge critic models and human-in-the-loop verification, eliminating 80% of manual review effort and improving diagnosis accuracy by 36%.",
+      "Led an event-driven chatbot initialization feature supporting 800K+ daily chats, delivering $1M+ ARR through personalized first-interaction routing.",
+      "Architected SQS-based asynchronous message routing with session caching for 20K+ real-time sessions, cutting DynamoDB load by 95% and sustaining 99.99% availability.",
+      "Architected a cloud-native testing platform on AWS EKS with Docker and Helm, cutting test deployment time from 6 weeks to 10 days.",
     ],
   },
   {
@@ -47,7 +59,7 @@ export const experiences = [
     company: "Graduate Education",
     role: "M.S. Information Systems + M.S. Business Analytics",
     bullets: [
-      "Trine University, M.S. Information Systems | 2023/01 - 2025/12",
+      "Trine University, M.S. Information Systems | 2024/01 - 2025/12",
       "Rensselaer Polytechnic Institute, M.S. Business Analytics | 2019/08 - 2020/12",
       "Built a foundation across systems, analytics, product thinking, and technical execution.",
     ],

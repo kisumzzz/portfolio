@@ -1,52 +1,66 @@
 [
   {
     "id": "aws-sde-role",
-    "title": "Current role at AWS Connect",
+    "title": "Role at AWS Connect",
     "section": "Experience",
-    "keywords": ["amazon", "aws", "connect", "current", "engineer", "role", "seattle"],
-    "content": "Anqi is currently a Software Development Engineer at Amazon Web Services on the AWS Connect team in Seattle, Washington. She has been in this role since September 2022."
+    "keywords": ["amazon", "aws", "connect", "engineer", "role", "seattle"],
+    "content": "Anqi was a Software Development Engineer at Amazon Web Services on the AWS Connect team in Seattle, Washington, from September 2022 to June 2026, working on a platform serving 20 million or more daily chat interactions at 99.99 percent availability."
+  },
+  {
+    "id": "aws-agentic-ai",
+    "title": "Agentic AI incident diagnosis system",
+    "section": "Experience",
+    "keywords": ["ai", "llm", "agent", "agentic", "react", "bedrock", "mcp", "rag", "incident", "diagnosis"],
+    "content": "She built a production-grade ReAct-based agentic AI system on AWS Bedrock for automated incident diagnosis, orchestrating MCP-enabled tools to access internal ticketing, logging, and codebase systems with hybrid RAG for enterprise knowledge retrieval. This reduced root cause analysis time by 90 percent."
+  },
+  {
+    "id": "aws-self-correction",
+    "title": "Self-correction and evaluation pipeline",
+    "section": "Experience",
+    "keywords": ["self-correction", "llm-as-judge", "critic", "hallucination", "human-in-the-loop", "evaluation", "accuracy"],
+    "content": "She designed a self-correction loop with LLM-as-judge critic models that automatically verified intermediate LLM outputs to reduce hallucination, eliminating 80 percent of manual review effort. She also curated internal incident datasets and built offline and online evaluation pipelines that improved agent diagnosis accuracy by 36 percent through iterative prompt refinement and few-shot learning, with evidence-backed citations and human-in-the-loop verification."
+  },
+  {
+    "id": "aws-chatbot-init",
+    "title": "Chatbot initialization feature",
+    "section": "Experience",
+    "keywords": ["chatbot", "initialization", "event-driven", "chats", "arr", "routing", "sqs"],
+    "content": "She led the design and delivery of an event-driven chatbot initialization feature supporting 800K+ daily chats for AWS Connect, delivering $1M+ ARR in business impact by unlocking enterprise customer adoption through personalized first-interaction routing that eliminated redundant greeting prompts."
   },
   {
     "id": "aws-distributed-systems",
-    "title": "Distributed systems scope",
+    "title": "Distributed systems and messaging architecture",
     "section": "Experience",
-    "keywords": ["distributed", "systems", "backend", "event-driven", "chat", "scale", "architecture"],
-    "content": "Her engineering work includes building large-scale event-driven distributed systems that support more than 500 million daily chat interactions."
+    "keywords": ["distributed", "systems", "backend", "sqs", "dynamodb", "session", "scale", "architecture"],
+    "content": "Her engineering work includes architecting SQS-based asynchronous message routing with session caching for 20K+ real-time message sessions, reducing DynamoDB load by 95 percent and decoupling bot processing from message ingestion under burst traffic, achieving 99.99 percent service availability across North America, Europe, and Asia-Pacific."
   },
   {
-    "id": "aws-ai-automation",
-    "title": "LLM and incident automation",
+    "id": "aws-eks-platform",
+    "title": "Cloud-native testing platform on EKS",
     "section": "Experience",
-    "keywords": ["ai", "llm", "automation", "incident", "triage", "microservices"],
-    "content": "She designed LLM-powered automation for incident response and reduced triage time by 80 percent across production microservices."
-  },
-  {
-    "id": "aws-reliability",
-    "title": "Reliability and infrastructure",
-    "section": "Experience",
-    "keywords": ["reliability", "scalability", "aws", "kubernetes", "cloud", "observability", "infrastructure"],
-    "content": "She improved reliability and scalability through asynchronous architectures, observability, and cloud-native infrastructure on AWS and Kubernetes."
+    "keywords": ["eks", "kubernetes", "docker", "helm", "testing", "cloud-native", "infrastructure"],
+    "content": "She architected a cloud-native testing platform on AWS EKS, migrating 100 percent of internal testing services to an automated cloud-native execution framework built with Docker containers and Helm charts, reducing test deployment time from 6 weeks to 10 days while achieving 99.99 percent infrastructure availability."
   },
   {
     "id": "amifor-product",
     "title": "Technical product management",
     "section": "Experience",
     "keywords": ["product", "manager", "amifor", "cross-functional", "user", "execution"],
-    "content": "Before AWS, Anqi worked as a Technical Product Manager at Amifor Management in Atlanta from May 2021 to August 2022, leading cross-functional product and engineering work."
+    "content": "Before AWS, Anqi worked as a Technical Product Manager at Amifor Management in Atlanta from May 2021 to August 2022, leading end-to-end technical product delivery."
   },
   {
     "id": "amifor-lock-app",
     "title": "Smart lock application",
     "section": "Experience",
     "keywords": ["smart lock", "mobile", "app", "users", "workflow", "dashboard", "automation"],
-    "content": "At Amifor Management, she worked on a smart lock app with more than 1,000 daily active users and improved workflow efficiency by 60 percent through automation and KPI dashboards."
+    "content": "At Amifor Management, she worked on a Smart Lock platform with more than 1,000 daily active users, translating business requirements into system prototypes and improving operational efficiency by 60 percent through workflow automation."
   },
   {
     "id": "education-trine",
     "title": "Information Systems degree",
     "section": "Education",
     "keywords": ["education", "degree", "masters", "information systems", "trine"],
-    "content": "Anqi is completing a Master of Science in Information Systems at Trine University, with dates listed as January 2023 through December 2025."
+    "content": "Anqi is completing a Master of Science in Information Systems at Trine University, with dates listed as January 2024 through December 2025."
   },
   {
     "id": "education-rpi",
@@ -56,10 +70,17 @@
     "content": "She also earned a Master of Science in Business Analytics from Rensselaer Polytechnic Institute, with dates listed as August 2019 through December 2020."
   },
   {
+    "id": "llm-engineering-skills",
+    "title": "LLM engineering skill set",
+    "section": "Skills",
+    "keywords": ["llm", "skills", "rag", "mcp", "tool calling", "langgraph", "vector database", "evaluation", "langfuse", "observability"],
+    "content": "Her LLM engineering skills include LLM inference, prompt engineering, RAG, MCP, tool calling, agent frameworks like LangGraph, vector databases, human-in-the-loop workflows, evaluation with RAGAS, DeepEval, and LLM-as-judge, and observability with LangFuse."
+  },
+  {
     "id": "profile-summary",
     "title": "Overall profile",
     "section": "Summary",
-    "keywords": ["summary", "background", "fit", "strengths", "roles", "backend", "platform", "ai"],
-    "content": "Her overall profile combines backend engineering, distributed systems, AI automation, and product-minded execution. She is a strong fit for backend, platform, infrastructure, and applied AI engineering roles."
+    "keywords": ["summary", "background", "fit", "strengths", "roles", "backend", "platform", "ai", "agent"],
+    "content": "Her overall profile combines 4+ years of Amazon-scale distributed systems engineering with hands-on production experience shipping LLM agent systems, including RAG, MCP tool orchestration, and evaluation pipelines. She is a strong fit for backend, platform, infrastructure, and applied AI or agent engineering roles."
   }
 ]

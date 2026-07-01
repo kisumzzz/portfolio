@@ -9,7 +9,7 @@ export default function ProjectsPage() {
         <p className="section-kicker">Projects</p>
         <h1 className="page-title">
           These highlights focus on the kinds of systems I have built in
-          practice: LLM-powered automation, event-driven messaging platforms,
+          practice: agentic AI systems, event-driven messaging platforms,
           and cloud infrastructure that improves reliability and delivery speed.
         </h1>
       </section>

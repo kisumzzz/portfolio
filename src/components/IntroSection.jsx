@@ -20,19 +20,19 @@ export default function IntroSection() {
           </span>
           and is grounded in building production systems that are reliable,
           scalable, and genuinely useful. More recently, that has meant
-          architecting large-scale chat platforms on AWS, cloud-native
-          infrastructure on Kubernetes, and LLM-powered automation for incident
-          response.
+          shipping a production-grade agentic AI system for automated incident
+          diagnosis on AWS Bedrock, alongside large-scale chat platforms and
+          cloud-native infrastructure on Kubernetes.
         </h2>
 
         <div className="intro--metrics" aria-label="Key highlights">
           <div className="intro--metric">
-            <strong>500M+</strong>
-            <span>daily chat interactions supported</span>
+            <strong>20M+</strong>
+            <span>daily chat interactions at 99.99% availability</span>
           </div>
           <div className="intro--metric">
-            <strong>80%</strong>
-            <span>faster incident triage through LLM automation</span>
+            <strong>90%</strong>
+            <span>faster root cause analysis via agentic AI</span>
           </div>
           <div className="intro--metric">
             <strong>AWS + K8s</strong>

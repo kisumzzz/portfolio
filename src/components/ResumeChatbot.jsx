@@ -4,7 +4,7 @@ const suggestedQuestions = [
   "What kind of engineering work do you do?",
   "Tell me about your Amazon experience.",
   "What is your background in AI and distributed systems?",
-  "Are you open to backend or platform roles?",
+  "Are you open to AI agent or backend platform roles?",
   "What do you enjoy outside of work?",
 ];
 

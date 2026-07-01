@@ -13,9 +13,9 @@ export default function ExperiencePage() {
         </h1>
         <p className="page-copy">
           My work has centered on backend engineering, distributed systems, AI
-          automation, and product-minded execution, with experience spanning
-          Amazon, technical product management, and graduate study in systems
-          and analytics.
+          agent systems, and product-minded execution, with experience
+          spanning Amazon, technical product management, and graduate study in
+          systems and analytics.
         </p>
       </section>
 
